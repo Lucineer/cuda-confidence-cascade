@@ -2,10 +2,13 @@
 name = "cuda-confidence-cascade"
 version = "0.1.0"
 edition = "2021"
-description = "Bayesian confidence propagation network — cascade nodes, edges, gates, decay, convergence monitoring"
+description = "Confidence cascade with decay, propagation, gates"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lucineer/cuda-confidence-cascade"
-keywords = ["ai", "fleet", "agent"]
+readme = "README.md"
+keywords = ["ai", "fleet", "agent", "rust"]
+categories = ["science"]
 
 [dependencies]
-cuda-equipment = { path = "../cuda-equipment" }
+cuda-equipment = "0.1"
+serde = { version = "1", features = ["derive"] }
